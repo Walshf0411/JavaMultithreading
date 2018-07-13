@@ -53,7 +53,9 @@ class Main{
             threads[i].start();
         }
         /*
-            This is a very important step as 
+            This is a very important step as if the main thread executes before
+            all the threads finish their execution, everytime the code is executed
+            the O/P would be different.
         */
         for (int i=0; i<noOfThreads;i++){
             threads[i].join(); //Makes the main method wait for all threads to complete
