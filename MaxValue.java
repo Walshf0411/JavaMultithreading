@@ -38,7 +38,8 @@ public class MaxValue extends Thread{
 class Main{
     public static void main(String[] args) throws InterruptedException{
         int noOfThreads = 4;
-        int[] values = new int[100];
+        int numberOfValues = 100; 
+        int[] values = new int[numberOfValues];
         int maxValue=0;
         
         for(int i=0; i<values.length;i++){
